@@ -1,0 +1,31 @@
+<script>
+// Function to increment the visitor count
+function incrementVisitorCount() {
+  // Check if local storage is supported by the browser
+  if (typeof(Storage) !== "undefined") {
+    // Get the current count from local storage
+    let count = localStorage.getItem("visitorCount");
+
+    // Check if count exists
+    if (count) {
+      // Increment the count
+      count = parseInt(count) + 1;
+    } else {
+      // Set the count to 1
+      count = 1;
+    }
+
+    // Store the updated count in local storage
+    localStorage.setItem("visitorCount", count);
+
+    // Display the count on the homepage
+    const countElement = document.getElementById("visitorCount");
+    countElement.textContent = count;
+  } else {
+    console.log("Local storage is not supported by this browser.");
+  }
+}
+
+// Call the incrementVisitorCount function when the page is loaded
+window.addEventListener("DOMContentLoaded", incrementVisitorCount);
+</script>
