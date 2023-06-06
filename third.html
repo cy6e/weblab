@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Set</title>
+    </head>
+    <body>
+        <script>
+            let mySet = new Set()
+            let num1 = prompt("Enter number 1:")
+            let num2 = prompt("Enter number 2:")
+            let num3 = prompt("Enter number 3:")
+            mySet.add(num1)
+            mySet.add(num2)
+            mySet.add(num3)
+            let value = prompt("Enter the value to be checked if it is present in the list:")
+            if(mySet.has(value)){
+                alert(value + " is present in the set")
+            }
+            else{
+                alert(value + " is not present in the set")
+            }
+            document.write("Set elements are: <br>")
+            for(let item of mySet)
+            document.write(item + "<br>")
+        </script>
+    </body>
+</html>
