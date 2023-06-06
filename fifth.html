@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Sort</title>
+    </head>
+    <body>
+        <input type = "text" id = "inputString" placeholder="Enter a string:">
+        <button id = "sortButton">Sort</button>
+        <script>
+            const input = document.getElementById("inputString")
+            const button = document.getElementById("sortButton")
+            button.addEventListener("click",function () {
+                const stringToSort = input.value 
+                const sortedString = stringToSort.split("").sort().join("")
+                alert("Sorted string is: " + sortedString)
+            })
+        </script>
+    </body>
+</html>
