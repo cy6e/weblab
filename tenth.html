@@ -1,0 +1,17 @@
+<script>
+var student = {
+  name: "Mohan Kumar",
+  Dept: "ISE",
+  id: 056
+};
+
+// Function to list the properties of an object
+const listObjectProperties = (obj) => {
+  const properties = Object.values(obj);
+  return properties.join(', ');
+};
+
+// Example usage
+const propertyList = listObjectProperties(student);
+console.log(propertyList);
+</script>
