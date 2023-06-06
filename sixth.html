@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Reverse</title>
+    </head>
+    <body>
+        <script>
+            const reverseNumber = (number) => {
+                const reverseString = String(number).split("").reverse().join("")
+                return parseInt(reverseString)
+            }
+            const num = prompt("Enter a number:")
+            const reversedNumber = reverseNumber(num)
+            alert("Given Number: " + num + " Reversed Number: " + reversedNumber)
+        </script>
+    </body>
+</html>          
