@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <script>
+            let inp = prompt("Enter a string:")
+            const vowels = ['a','e','i','o','u']
+            let count = 0
+            inp = inp.toLowerCase()
+            for(var i = 0;i < inp.length;i++){
+                if(inp.includes(vowels[i]))
+                count++
+            }
+            alert("Number of vowels in " + inp + " : " + count)
+        </script>
+    </body>
+</html>	
